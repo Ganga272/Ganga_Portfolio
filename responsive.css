@@ -1227,50 +1227,6 @@ form {
 
 
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .contact-container-inside {
-        flex-direction: column; /* Stack elements vertically */
-        height: auto; /* Adjust height for small screens */
-    }
-
-    .container-left {
-        display: none; /* Hide image container */
-    }
-
-    form {
-        width: 80%; /* Ensure form takes most of the screen width */
-        margin: 0px 20px; /* Center form */
-      
-       
-    }
-
-    .contact-container{
-       width: 135%;
-        margin-left: -70px;
-        
-    }
-    .contact-right{
-        width: 108%;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        margin-left: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        width: 205%; /* Make form full width */
-        margin: 10px; /* Remove any margins */
-        margin-right: -30px;
-    }
-
-    .contactform-group input,
-    .contactform-group textarea {
-        width: 120%; /* Ensure inputs are full width */
-    }
-}
-
 
 .footer{
     text-align: center;
@@ -1299,4 +1255,35 @@ form {
 
 .arrow-up:hover, .arrow-down:hover {
     color: #007bff; /* Change this to the hover color you prefer */
+}
+@media (max-width: 768px) {
+    .innercontact, .gallery img, .container-left img {
+        display: none; /* Hide non-essential elements */
+    }
+
+    .contact-container-inside {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height for small screens */
+        background-color: #0D3143;
+        border: none;
+    }
+
+    form {
+        width: 100%; /* Ensure form takes full screen width */
+        margin: 10px; /* Center form with margin */
+    }
+}
+
+/* Styles for screens 480px and below */
+@media (max-width: 480px) {
+    form {
+        width: 100%; /* Full width */
+        margin: 5px; /* Small margin */
+        
+    }
+
+    .contactform-group input,
+    .contactform-group textarea {
+        width: 100%; /* Ensure inputs are full width */
+    }
 }
